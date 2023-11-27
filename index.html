@@ -2,73 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>D.Novikov CV</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Novikov CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- PT Serif, headers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Roboto, sans-serif, regular text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <!--Надо заполнить хедэр-->
-</header>
 <main>
-    <section>
-        <h1>Денис Новиков</h1>
-        <img src="https://i.ibb.co/dgTws3k/thatsme.jpg" alt="my photo">
-        <p>Мне 26 лет, я родился в Москве. В 2022 году увлёкся программированием.</p>
-        <p>Хорошо владею языками программирования <strong>Python</strong> и <strong>JavaScript</strong>, а так же
-            <strong>HTML</strong> и <strong>CSS</strong>.</p>
-        <p><a href="https://github.com/K1ngFish" target="_blank">Мой профиль на GitHub</a></p>
-    </section>
+    <div class="container">
+        <section>
+            <div class="info">
+                <img id="photo" src="https://i.ibb.co/dgTws3k/thatsme.jpg" alt="my photo">
+                <div class="info-text">
+                <h1>Denis Novikov</h1>
+                <p>I'm 26 years old. I was born in Moscow. In 2022, I began to take an interest in programming.</p>
+                <p>I have good knowledge of <strong>Python</strong> и <strong>JavaScript</strong> programming languages,
+                    and also <strong>HTML</strong> and <strong>CSS</strong>.</p>
+                <p>You can contact me through email: test@test.com</p>
+                <p><a href="https://github.com/K1ngFish" target="_blank">My profile on Github</a></p>
+                </div>
+            </div>
+        </section>
 
-    <hr>
-    <section>
-        <h2>Мои хобби</h2>
-        <ul>
-            <li>Чтение</li>
-            <li>Фильмы</li>
-            <li>Сериалы</li>
-            <li>Видеоигры</li>
-            <li>Внутренняя кухня разных профессий</li>
-        </ul>
-    </section>
+        <section>
+            <div class="card bg-lightblue">
+                <h2>My projects</h2>
+                <table class="experience-table">
+<!--                    <tr>-->
+<!--                        <th>Project's name</th>-->
+<!--                        <th>Technology</th>-->
+<!--                    </tr>-->
+                    <tr>
+                        <td>Bulletin Board</td>
+                        <td>Python, Django, Celery, HTML, Bootstrap</td>
+                    </tr>
+                    <tr>
+                        <td>Messenger</td>
+                        <td>Python, Django, JavaScript, HTML, CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Currency Bot</td>
+                        <td>Python, pyTelegramBotAPI</td>
+                    </tr>
+                    <tr>
+                        <td>News application</td>
+                        <td>Python, Django, Celery, HTML, Bootstrap</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
-    <hr>
-    <section>
-        <h2>Мои проекты</h2>
-        <table>
-            <tr>
-                <th>Название проекта</th>
-                <th>Технологии</th>
-            </tr>
-            <tr>
-                <td>Проект 1:</td>
-                <td>Python, Django, Celery, HTML</td>
-            </tr>
-            <tr>
-                <td>Проект 2:</td>
-                <td>JavaScript, HTML, CSS</td>
-            </tr>
-        </table>
-    </section>
 
-    <hr>
-    <section>
-    <h2>Связаться со мной</h2>
-    <form>
-        <label for="name">Enter your name</label>
-        <input type="text" id="name" placeholder="Your name is...">
-        <br>
-        <label for="email">Enter your email</label>
-        <input type="email" id="email" placeholder="Your email is...">
-        <br>
-        <label for="message">Enter you message</label>
-        <textarea name="text" id="message" cols="30" rows="10"></textarea>
-        <input type="submit">
-    </form>
-    </section>
+        <section>
+            <div class="card bg-pink">
+                <h2>What I know?</h2>
+                <p>Python</p>
+                <div class="specific-skillbar">
+                    <div class="skills python">90%</div>
+                </div>
 
-</main>
-<footer>
-<!--Надо заполнить футер-->
-</footer>
+                <p>HTML</p>
+                <div class="specific-skillbar">
+                    <div class="skills html">80%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="specific-skillbar">
+                    <div class="skills css">65%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="specific-skillbar">
+                    <div class="skills js">60%</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="card bg-blue">
+                <h2>My hobbies</h2>
+                <ul class="list">
+                    <li>Reading</li>
+                    <li>Movies and TV-shows</li>
+                    <li>Video-games</li>
+                    <li>Internal kitchen of different jobs</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section>
+            <button type="button" class="collapsible">Form to get in contact</button>
+            <div class="content">
+                <div class="contact">
+                    <div class="card">
+                        <h2>Contact me</h2>
+                        <form>
+                            <div class="row">
+                                <div class="form-group">
+                                <label for="name">Enter your name</label>
+                                <input type="text" id="name" placeholder="Your name is...">
+                                </div>
+                                <div class="form-group">
+                                <label for="email">Enter your email</label>
+                                <input type="email" id="email" placeholder="Your email is...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="message">Enter you message</label>
+                            <textarea name="text" id="message" cols="30" rows="10" placeholder="Enter you text..."></textarea>
+                            </div>
+                            <input class="btn" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </main>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 </html>
