@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Novikov CV</title>
+    <title>Novikov's CV</title>
     <link rel="stylesheet" href="styles.css">
     <!-- PT Serif, headers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,7 +118,8 @@
                             </div>
                             <div class="form-group">
                             <label for="message">Enter you message</label>
-                            <textarea name="text" id="message" cols="30" rows="10" placeholder="Enter you text..."></textarea>
+                            <textarea name="text" id="message" cols="30" rows="10" placeholder="Enter you text...">
+                            </textarea>
                             </div>
                             <input class="btn" type="submit" value="Send">
                         </form>
@@ -130,20 +131,24 @@
     </div>
     </main>
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-    for (i = 0; i < coll.length; i++) {
+        for (i = 0; i < coll.length; i++) {
+        var content = coll[i].nextElementSibling;
+        content.style.display = "none"; // Добавьте эту строку для инициализации скрытия контента
+
         coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
     }
+    });
+    }
+
 </script>
 </body>
 </html>
