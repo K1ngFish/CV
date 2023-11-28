@@ -146,9 +146,9 @@ a:visited {
     border-radius: 10px;
 }
 
-.html {width: 80%; background-color: #ff913f;}
+.html {width: 80%; background-color: #ff7f20;}
 .css {width: 70%; background-color: #4060ff;}
-.js {width: 60%; background-color: rgb(126, 136, 0);}
+.js {width: 60%; background-color: rgb(108, 90, 0);}
 .python {
     width: 85%;
     background: linear-gradient(to right, #fff424, #3f59b4);
