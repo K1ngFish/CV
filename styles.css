@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #00acff;
+    color: #1100ff;
     text-decoration: none;
 }
 
@@ -87,10 +87,6 @@ a:visited {
     padding-bottom: 10px;
 }
 
-.experience-table td:nth-child(2) {
-    color: #86898f
-}
-
 .form-group label {
     display: block;
     font-size: 14px;
@@ -150,12 +146,12 @@ a:visited {
     border-radius: 10px;
 }
 
-.html {width: 80%; background-color: #ffb476;}
-.css {width: 70%; background-color: #76bbfd;}
-.js {width: 60%; background-color: #ffe27c;}
+.html {width: 80%; background-color: #ff913f;}
+.css {width: 70%; background-color: #4060ff;}
+.js {width: 60%; background-color: rgb(126, 136, 0);}
 .python {
     width: 85%;
-    background: linear-gradient(to right, #FFE873, #6991AC);
+    background: linear-gradient(to right, #fff424, #3f59b4);
 }
 
 .collapsible {
