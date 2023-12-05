@@ -101,18 +101,18 @@
                 <div class="contact">
                     <div class="card">
                         <h2>Contact me</h2>
-                        <form>
+                        <form class="contact-form">
                             <div class="row">
-                                <div class="form-group">
+                                <div class="contact-form__input-name">
                                 <label for="name">Enter your name</label>
                                 <input type="text" id="name" placeholder="Your name is...">
                                 </div>
-                                <div class="form-group">
+                                <div class="contact-form__input-email">
                                 <label for="email">Enter your email</label>
                                 <input type="email" id="email" placeholder="Your email is...">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="contact-form__input-message">
                             <label for="message">Enter you message</label>
                             <textarea name="text" id="message" cols="30" rows="10" placeholder="Enter you text...">
                             </textarea>
@@ -132,7 +132,7 @@
 
         for (i = 0; i < coll.length; i++) {
         let content = coll[i].nextElementSibling;
-        content.style.display = "none"; // Добавьте эту строку для инициализации скрытия контента
+        content.style.display = "none";
 
         coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
